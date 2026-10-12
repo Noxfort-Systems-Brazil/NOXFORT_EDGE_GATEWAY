@@ -1,0 +1,86 @@
+# NOXFORT EDGE GATEWAY - Unified Multi-Tenant Edge Gateway & Reverse Proxy
+# Copyright (C) 2026 Noxfort Systems
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+# File: internal/infrastructure/caddy/Caddyfile
+# Author: Gabriel Moraes
+# Date: 2026-10-12
+
+{
+	admin localhost:2019
+}
+
+# ------------------------------------------------------------------------------
+# DOMÍNIO 1: CARINA (CCO Videowall, Semáforos e Telemetria de Ambulâncias EVP)
+# ------------------------------------------------------------------------------
+{$CARINA_DOMAIN:carinanoxfort}.duckdns.org {
+	tls {
+		dns duckdns {$CARINA_TOKEN:ff528f24-1dd3-4c84-9c12-02b6d9805440}
+	}
+
+	log {
+		output stdout
+		format console
+	}
+
+	# Rota Ambulâncias EVP
+	handle /amb* {
+		reverse_proxy host.docker.internal:2201 {
+			header_up Host {host}
+			header_up X-Real-IP {remote_host}
+		}
+	}
+
+	# Rota CCO Videowall (React + ECharts + SSE)
+	handle /cco* {
+		reverse_proxy host.docker.internal:2201 {
+			header_up Host {host}
+			header_up X-Real-IP {remote_host}
+		}
+	}
+
+	# Rota padrão: Gateway Go da Carina na porta 2201
+	handle {
+		reverse_proxy host.docker.internal:2201 {
+			header_up Host {host}
+			header_up X-Real-IP {remote_host}
+		}
+	}
+}
+
+# ------------------------------------------------------------------------------
+# DOMÍNIO 2: NOXFORT MONITOR (Observabilidade Industrial e Incidentes)
+# ------------------------------------------------------------------------------
+{$MONITOR_DOMAIN:noxfortmonitor}.duckdns.org {
+	tls {
+		dns duckdns {$MONITOR_TOKEN:2c42c374-2143-4292-93c3-5baccb6446c4}
+	}
+
+	log {
+		output stdout
+		format console
+	}
+
+	# WebSocket endpoint para Mosquitto MQTT (WSS)
+	@mqtt_ws {
+		path /mqtt
+	}
+	reverse_proxy @mqtt_ws host.docker.internal:9001
+
+	# Ingestão de telemetria e Web UI do Monitor na porta 22100
+	reverse_proxy host.docker.internal:22100 {
+		header_up Host {host}
+		header_up X-Real-IP {remote_host}
+	}
+}

@@ -1,0 +1,160 @@
+# ==============================================================================
+# NOXFORT EDGE GATEWAY — MkDocs Configuration (Material for MkDocs)
+# Unified Multi-Tenant Edge Gateway & Reverse Proxy
+# Copyright (C) 2026 — Noxfort Systems
+# ==============================================================================
+
+site_name: "NOXFORT EDGE GATEWAY — Technical Documentation"
+site_description: "Technical documentation for NOXFORT EDGE GATEWAY — High-availability edge reverse proxy, Caddy SNI routing and DuckDNS synchronization."
+site_author: "Gabriel Moraes — Noxfort Systems"
+copyright: "Copyright &copy; 2026 — Noxfort Systems"
+
+# Exclude conflicting GitHub folder readme from MkDocs build
+exclude_docs: |
+  /README.md
+
+validation:
+  omitted_files: ignore
+  absolute_links: ignore
+  unrecognized_links: ignore
+  links:
+    not_found: ignore
+    absolute_links: ignore
+    unrecognized_links: ignore
+    anchors: ignore
+
+# ==============================================================================
+# Theme
+# ==============================================================================
+theme:
+  name: material
+  language: en
+  logo: assets/noxfort-logo.png
+  favicon: assets/noxfort-logo.png
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Light Mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Dark Mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.path
+    - navigation.instant
+    - navigation.tracking
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+
+# ==============================================================================
+# Markdown Extensions
+# ==============================================================================
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+# ==============================================================================
+# Plugins
+# ==============================================================================
+plugins:
+  - search
+
+extra_css:
+  - stylesheets/extra.css
+
+# ==============================================================================
+# Navigation
+# ==============================================================================
+nav:
+  - Overview: index.md
+  - Master MOC: NOXFORT_EDGE_GATEWAY_MOC.md
+  - Architecture & Design:
+    - System Architecture: ARCHITECTURE.md
+    - API & Contracts: API_REFERENCE.md
+  - Subsystems & Networking:
+    - DDNS Synchronization: DDNS_SYNCHRONIZATION.md
+    - Active Health Monitoring: HEALTH_MONITORING.md
+    - Configuration & Caddyfile: CONFIGURATION_GUIDE.md
+  - Operations & QA:
+    - Developer Guides: DEVELOPER_GUIDES.md
+    - Testing & Validation: TESTING.md
+    - Deployment & Packaging: DEPLOYMENT_AND_PACKAGING.md
+  - Multi-Language Hubs:
+    - 🇺🇸 English:
+      - Hub: en/README.md
+      - Master MOC: en/noxfort_edge_gateway_moc.md
+      - System Architecture: en/architecture.md
+      - API & Contracts: en/api_reference.md
+      - DDNS Synchronization: en/ddns_synchronization.md
+      - Health Monitoring: en/health_monitoring.md
+      - Configuration Guide: en/configuration_guide.md
+      - Developer Guides: en/developer_guides.md
+      - Testing & QA: en/testing.md
+      - Deployment & Packaging: en/deployment_and_packaging.md
+    - 🇧🇷 Português (Brasil):
+      - Central: pt-br/README.md
+      - Master MOC: pt-br/noxfort_edge_gateway_moc.md
+      - Arquitetura do Sistema: pt-br/architecture.md
+      - Referência de APIs: pt-br/api_reference.md
+      - Sincronização DDNS: pt-br/ddns_synchronization.md
+      - Monitoramento de Saúde: pt-br/health_monitoring.md
+      - Guia de Configuração: pt-br/configuration_guide.md
+      - Guia do Desenvolvedor: pt-br/developer_guides.md
+      - Testes & Validação: pt-br/testing.md
+      - Implantação em Produção: pt-br/deployment_and_packaging.md
+    - 🇪🇸 Español:
+      - Centro: es/README.md
+      - Arquitectura del Sistema: es/architecture.md
+      - Referencia de APIs: es/api_reference.md
+      - Pruebas y Validación: es/testing.md
+      - Despliegue y Operación: es/deployment_and_packaging.md
+    - 🇫🇷 Français:
+      - Hub: fr/README.md
+      - Architecture Système: fr/architecture.md
+      - Référence des API: fr/api_reference.md
+      - Tests et Assurance Qualité: fr/testing.md
+      - Déploiement et Opérations: fr/deployment_and_packaging.md
+    - 🇷🇺 Русский:
+      - Главная: ru/README.md
+      - Архитектура системы: ru/architecture.md
+      - Спецификация API: ru/api_reference.md
+      - Тестирование и валидация: ru/testing.md
+      - Развертывание и эксплуатация: ru/deployment_and_packaging.md
+    - 🇨🇳 简体中文:
+      - 文档主页: zh/README.md
+      - 系统架构核心设计: zh/architecture.md
+      - API 规范与契约: zh/api_reference.md
+      - 测试规范与质量验证: zh/testing.md
+      - 生产部署与运维指南: zh/deployment_and_packaging.md

@@ -1,0 +1,42 @@
+# ==============================================================================
+# NOXFORT EDGE GATEWAY - .gitignore
+# Go 1.22+ + Docker + MkDocs
+# ==============================================================================
+
+# Compiled Binaries
+/bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Test & Coverage artifacts
+coverage.out
+coverage.html
+*.coverprofile
+
+# Docker local data & volumes
+caddy_data/
+caddy_config/
+.docker/
+
+# Environment files
+.env
+.env.local
+
+# Operating System & IDEs
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# MkDocs build output
+site/
+
+# License Header Template
+cabecalho.txt
