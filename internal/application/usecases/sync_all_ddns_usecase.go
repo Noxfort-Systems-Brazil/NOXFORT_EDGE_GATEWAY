@@ -15,7 +15,7 @@
 //
 // File: internal/application/usecases/sync_all_ddns_usecase.go
 // Author: Gabriel Moraes
-// Date: 2026-10-12
+// Date: October 2026
 
 package usecases
 
@@ -35,6 +35,7 @@ type SyncAllDDNSUseCase struct {
 	synchronizer contracts.IDDNSSynchronizer
 	ipv6Detector contracts.IIPv6Detector
 	ipv4Detector contracts.IIPv4Detector
+	enableIPv4   bool
 }
 
 // NewSyncAllDDNSUseCase constructs the use case instance with injected dependencies (DIP).
@@ -43,12 +44,14 @@ func NewSyncAllDDNSUseCase(
 	synchronizer contracts.IDDNSSynchronizer,
 	ipv6Detector contracts.IIPv6Detector,
 	ipv4Detector contracts.IIPv4Detector,
+	enableIPv4 bool,
 ) *SyncAllDDNSUseCase {
 	return &SyncAllDDNSUseCase{
 		targets:      targets,
 		synchronizer: synchronizer,
 		ipv6Detector: ipv6Detector,
 		ipv4Detector: ipv4Detector,
+		enableIPv4:   enableIPv4,
 	}
 }
 
@@ -63,7 +66,7 @@ func (uc *SyncAllDDNSUseCase) Execute(ctx context.Context) []contracts.SyncResul
 	}
 
 	var ipv4 string
-	if uc.ipv4Detector != nil {
+	if uc.enableIPv4 && uc.ipv4Detector != nil {
 		ipv4 = uc.ipv4Detector.DetectPublicIPv4(ctx)
 	}
 

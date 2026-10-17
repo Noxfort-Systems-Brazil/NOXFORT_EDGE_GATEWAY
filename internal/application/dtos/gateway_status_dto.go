@@ -15,7 +15,7 @@
 //
 // File: internal/application/dtos/gateway_status_dto.go
 // Author: Gabriel Moraes
-// Date: 2026-10-12
+// Date: October 2026
 
 // Package dtos defines Data Transfer Objects used across Application and Presentation boundaries.
 package dtos

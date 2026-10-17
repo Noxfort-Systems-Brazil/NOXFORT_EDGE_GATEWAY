@@ -15,7 +15,7 @@
 //
 // File: internal/infrastructure/ddns/ipv4_detector.go
 // Author: Gabriel Moraes
-// Date: 2026-10-12
+// Date: October 2026
 
 package ddns
 

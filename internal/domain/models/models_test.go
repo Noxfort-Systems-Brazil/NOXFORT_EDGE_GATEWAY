@@ -15,7 +15,7 @@
 //
 // File: internal/domain/models/models_test.go
 // Author: Gabriel Moraes
-// Date: 2026-10-12
+// Date: October 2026
 
 package models_test
 

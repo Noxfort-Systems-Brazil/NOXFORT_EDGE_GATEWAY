@@ -15,7 +15,7 @@
 //
 // File: internal/application/usecases/get_gateway_status_usecase.go
 // Author: Gabriel Moraes
-// Date: 2026-10-12
+// Date: October 2026
 
 package usecases
 

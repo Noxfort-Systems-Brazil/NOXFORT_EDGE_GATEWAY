@@ -95,7 +95,7 @@ All Go files must adhere to standard `gofmt` and include the Apache 2.0 license 
 //
 // File: <file-relative-path>
 // Author: Gabriel Moraes
-// Date: 2026-10-12
+// Date: October 2026
 ```
 
 Use `cabecalho.txt` as a reference when creating new files.

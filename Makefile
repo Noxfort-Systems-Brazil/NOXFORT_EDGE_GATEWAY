@@ -15,7 +15,7 @@
 #
 # File: Makefile
 # Author: Gabriel Moraes
-# Date: 2026-10-12
+# Date: October 2026
 
 .PHONY: all build start stop status logs test
 

@@ -15,7 +15,7 @@
 //
 // File: config/config.go
 // Author: Gabriel Moraes
-// Date: 2026-10-12
+// Date: October 2026
 
 package config
 
@@ -33,6 +33,7 @@ type Config struct {
 	HTTPSPort              int
 	SyncIntervalSeconds    int
 	HealthIntervalSeconds  int
+	EnableIPv4             bool
 	Upstreams              []*models.UpstreamService
 	DDNSTargets            []*models.DDNSTarget
 	Routes                 []models.RouteRule
@@ -44,6 +45,7 @@ func LoadConfig() (*Config, error) {
 	httpsPort := getEnvInt("GATEWAY_HTTPS_PORT", 443)
 	syncInterval := getEnvInt("GATEWAY_SYNC_INTERVAL_SEC", 300)
 	healthInterval := getEnvInt("GATEWAY_HEALTH_INTERVAL_SEC", 15)
+	enableIPv4 := getEnvBool("GATEWAY_ENABLE_IPV4", false)
 
 	carinaDomain := getEnv("CARINA_DOMAIN", "carinanoxfort")
 	carinaToken := getEnv("CARINA_TOKEN", "ff528f24-1dd3-4c84-9c12-02b6d9805440")
@@ -74,6 +76,7 @@ func LoadConfig() (*Config, error) {
 		HTTPSPort:             httpsPort,
 		SyncIntervalSeconds:   syncInterval,
 		HealthIntervalSeconds: healthInterval,
+		EnableIPv4:            enableIPv4,
 		Upstreams:             upstreams,
 		DDNSTargets:           ddnsTargets,
 		Routes:                routes,
@@ -95,3 +98,13 @@ func getEnvInt(key string, fallback int) int {
 	}
 	return fallback
 }
+
+func getEnvBool(key string, fallback bool) bool {
+	if val := strings.TrimSpace(os.Getenv(key)); val != "" {
+		if b, err := strconv.ParseBool(val); err == nil {
+			return b
+		}
+	}
+	return fallback
+}
+

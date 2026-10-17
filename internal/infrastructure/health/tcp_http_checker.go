@@ -15,7 +15,7 @@
 //
 // File: internal/infrastructure/health/tcp_http_checker.go
 // Author: Gabriel Moraes
-// Date: 2026-10-12
+// Date: October 2026
 
 package health
 

@@ -15,7 +15,7 @@
 #
 # File: internal/infrastructure/caddy/Caddyfile
 # Author: Gabriel Moraes
-# Date: 2026-10-12
+# Date: October 2026
 
 {
 	admin localhost:2019
@@ -42,7 +42,16 @@
 		}
 	}
 
-	# Rota CCO Videowall (React + ECharts + SSE)
+	# Rota CCO Streaming SSE (Tempo Real com flush imediato)
+	handle /cco/stream* {
+		reverse_proxy host.docker.internal:2201 {
+			header_up Host {host}
+			header_up X-Real-IP {remote_host}
+			flush_interval -1
+		}
+	}
+
+	# Rota CCO Videowall (React + Assets + Topologia com buffer otimizado)
 	handle /cco* {
 		reverse_proxy host.docker.internal:2201 {
 			header_up Host {host}
@@ -84,3 +93,31 @@
 		header_up X-Real-IP {remote_host}
 	}
 }
+
+# ------------------------------------------------------------------------------
+# ACESSO LOCAL LAN (HTTP :80 Direto para Wi-Fi Local / Tablets / CCO)
+# ------------------------------------------------------------------------------
+:80 {
+	# Rota CCO Streaming SSE (Flush imediato)
+	handle /cco/stream* {
+		reverse_proxy host.docker.internal:2201 {
+			flush_interval -1
+		}
+	}
+
+	# Rota CCO Videowall
+	handle /cco* {
+		reverse_proxy host.docker.internal:2201
+	}
+
+	# Rota Ambulâncias EVP
+	handle /amb* {
+		reverse_proxy host.docker.internal:2201
+	}
+
+	# Rota padrão: CARINA
+	handle {
+		reverse_proxy host.docker.internal:2201
+	}
+}
+

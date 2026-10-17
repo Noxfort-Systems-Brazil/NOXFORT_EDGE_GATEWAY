@@ -15,7 +15,7 @@
 //
 // File: internal/domain/contracts/ddns_synchronizer.go
 // Author: Gabriel Moraes
-// Date: 2026-10-12
+// Date: October 2026
 
 package contracts
 

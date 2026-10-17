@@ -15,7 +15,7 @@
 //
 // File: internal/application/usecases/usecases_test.go
 // Author: Gabriel Moraes
-// Date: 2026-10-12
+// Date: October 2026
 
 package usecases_test
 
@@ -93,7 +93,7 @@ func TestSyncAllDDNSUseCase(t *testing.T) {
 	mockV6 := &MockIPv6Detector{IP: "2804::1"}
 	mockV4 := &MockIPv4Detector{IP: "189.1.1.1"}
 
-	uc := usecases.NewSyncAllDDNSUseCase([]*models.DDNSTarget{t1, t2}, mockSync, mockV6, mockV4)
+	uc := usecases.NewSyncAllDDNSUseCase([]*models.DDNSTarget{t1, t2}, mockSync, mockV6, mockV4, true)
 	results := uc.Execute(context.Background())
 
 	if len(results) != 2 {
@@ -135,6 +135,7 @@ func TestGetGatewayStatusUseCase(t *testing.T) {
 		&MockDDNSSynchronizer{},
 		&MockIPv6Detector{IP: "2804::1"},
 		&MockIPv4Detector{IP: "189.1.1.1"},
+		true,
 	)
 	healthUC := usecases.NewMonitorHealthUseCase(
 		[]*models.UpstreamService{u1},

@@ -15,7 +15,7 @@
 #
 # File: internal/infrastructure/caddy/Dockerfile
 # Author: Gabriel Moraes
-# Date: 2026-10-12
+# Date: October 2026
 
 FROM caddy:2.8.4-builder AS builder
 

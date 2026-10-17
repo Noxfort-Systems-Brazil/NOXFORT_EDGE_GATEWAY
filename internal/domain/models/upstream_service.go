@@ -15,7 +15,7 @@
 //
 // File: internal/domain/models/upstream_service.go
 // Author: Gabriel Moraes
-// Date: 2026-10-12
+// Date: October 2026
 
 // Package models defines pure domain entities and value objects (Domain Layer).
 package models
