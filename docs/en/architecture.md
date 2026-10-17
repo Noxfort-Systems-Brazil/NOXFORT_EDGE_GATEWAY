@@ -108,5 +108,5 @@ graph BT
 <div align="center">
   <img src="assets/noxfort-logo.png" alt="Noxfort Systems Logo" width="40" /><br/>
   <b>Noxfort Systems</b> — <i>A State Of Art Company</i><br/>
-  <small>© 2026 Noxfort Systems. Licensed under the Apache License 2.0.</small>
+  <small>© 2026 Noxfort Systems. Licensed under Apache-2.0 (SPDX: Apache-2.0).</small>
 </div>

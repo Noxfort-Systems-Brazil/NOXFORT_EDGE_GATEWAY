@@ -8,7 +8,7 @@ aliases: [Documentation Hub, Docs Index]
 # NOXFORT EDGE GATEWAY Documentation Hub
 *Noxfort Systems — A State Of Art Company*
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue?style=flat)](../LICENSE)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](../LICENSE)
 [![Go](https://img.shields.io/badge/Go-1.22%2B-00ADD8?style=flat&logo=go)](https://go.dev/)
 
 ---
@@ -38,5 +38,5 @@ Welcome to the **NOXFORT EDGE GATEWAY** documentation library.
 <div align="center">
   <img src="assets/noxfort-logo.png" alt="Noxfort Systems Logo" width="40" /><br/>
   <b>Noxfort Systems</b> — <i>A State Of Art Company</i><br/>
-  <small>© 2026 Noxfort Systems. Licensed under the Apache License 2.0.</small>
+  <small>© 2026 Noxfort Systems. Licensed under Apache-2.0 (SPDX: Apache-2.0).</small>
 </div>

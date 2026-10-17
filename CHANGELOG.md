@@ -34,5 +34,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <div align="center">
   <img src="docs/assets/noxfort-logo.png" alt="Noxfort Systems Logo" width="40" /><br/>
   <b>Noxfort Systems</b> — <i>A State Of Art Company</i><br/>
-  <small>© 2026 Noxfort Systems. Licensed under the Apache License 2.0.</small>
+  <small>© 2026 Noxfort Systems. Licensed under Apache-2.0 (SPDX: Apache-2.0).</small>
 </div>

@@ -18,5 +18,5 @@
 <div align="center">
   <img src="../assets/noxfort-logo.png" alt="Noxfort Systems Logo" width="40" /><br/>
   <b>Noxfort Systems</b> — <i>A State Of Art Company</i><br/>
-  <small>© 2026 Noxfort Systems. 遵循 Apache 2.0 许可证。</small>
+  <small>© 2026 Noxfort Systems. 遵循 Apache-2.0 许可证 (SPDX: Apache-2.0)。</small>
 </div>

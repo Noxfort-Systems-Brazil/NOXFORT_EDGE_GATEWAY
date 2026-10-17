@@ -73,13 +73,14 @@ Implement `contracts.IHealthMonitor` in `internal/infrastructure/health/` (e.g. 
 
 ---
 
-## 4. Coding Standards & Apache 2.0 License Header
+## 4. Coding Standards & SPDX Apache 2.0 License Header
 
-All Go files must adhere to standard `gofmt` and include the Apache 2.0 license header:
+All Go files must adhere to standard `gofmt` and include the SPDX Apache 2.0 license header:
 
 ```go
 // NOXFORT EDGE GATEWAY - Unified Multi-Tenant Edge Gateway & Reverse Proxy
-// Copyright (C) 2026 Noxfort Systems
+// SPDX-FileCopyrightText: 2026 Noxfort Systems
+// SPDX-License-Identifier: Apache-2.0
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -105,5 +106,5 @@ Use `cabecalho.txt` as a reference when creating new files.
 <div align="center">
   <img src="assets/noxfort-logo.png" alt="Noxfort Systems Logo" width="40" /><br/>
   <b>Noxfort Systems</b> — <i>A State Of Art Company</i><br/>
-  <small>© 2026 Noxfort Systems. Licensed under the Apache License 2.0.</small>
+  <small>© 2026 Noxfort Systems. Licensed under Apache-2.0 (SPDX: Apache-2.0).</small>
 </div>

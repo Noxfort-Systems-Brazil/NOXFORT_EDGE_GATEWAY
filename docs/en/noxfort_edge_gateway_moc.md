@@ -73,8 +73,9 @@ NOXFORT_EDGE_GATEWAY/
 ├── bin/                            # Compiled Native Binaries (noxfort-gateway)
 ├── docker-compose.yml              # Container Orchestration (Host Ports 80 & 443)
 ├── Makefile                        # Build, Test, Start, Stop & Log Automation
-├── cabecalho.txt                   # Standard Apache 2.0 License Header Template
-├── LICENSE                         # Official Apache License 2.0
+├── cabecalho.txt                   # Standard SPDX Apache-2.0 License Header Template
+├── LICENSE                         # Official Apache License 2.0 (SPDX: Apache-2.0)
+├── pyproject.toml                  # Project Metadata & MkDocs Tooling (SPDX: Apache-2.0)
 └── README.md                       # Repository Master Overview & Quick Start
 ```
 
@@ -98,5 +99,5 @@ NOXFORT_EDGE_GATEWAY/
 <div align="center">
   <img src="assets/noxfort-logo.png" alt="Noxfort Systems Logo" width="40" /><br/>
   <b>Noxfort Systems</b> — <i>A State Of Art Company</i><br/>
-  <small>© 2026 Noxfort Systems. Licensed under the Apache License 2.0.</small>
+  <small>© 2026 Noxfort Systems. Licensed under Apache-2.0 (SPDX: Apache-2.0).</small>
 </div>

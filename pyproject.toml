@@ -1,0 +1,63 @@
+# NOXFORT EDGE GATEWAY - Unified Multi-Tenant Edge Gateway & Reverse Proxy
+# SPDX-FileCopyrightText: 2026 Noxfort Systems
+# SPDX-License-Identifier: Apache-2.0
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+# File: pyproject.toml
+# Author: Gabriel Moraes
+# Date: October 2026
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "noxfort-edge-gateway"
+version = "1.0.0"
+description = "Unified Multi-Tenant Edge Gateway & Reverse Proxy with Caddy SNI Routing and DuckDNS"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [
+    {name = "Gabriel Moraes", email = "gabriel.moraes@noxfortsystems.com"}
+]
+keywords = [
+    "gateway",
+    "edge",
+    "reverse-proxy",
+    "caddy",
+    "duckdns",
+    "go",
+    "sni",
+    "spdx"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: Internet :: Proxy Servers",
+]
+dependencies = [
+    "mkdocs>=1.5.0",
+    "mkdocs-material>=9.5.0",
+    "pymdown-extensions>=10.7"
+]
+
+[project.urls]
+Homepage = "https://github.com/Noxfort-Systems-Brazil/NOXFORT_EDGE_GATEWAY"
+Documentation = "https://noxfort.com/docs/edge-gateway"
+Repository = "https://github.com/Noxfort-Systems-Brazil/NOXFORT_EDGE_GATEWAY"

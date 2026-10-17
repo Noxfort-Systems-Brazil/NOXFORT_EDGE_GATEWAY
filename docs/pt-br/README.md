@@ -13,7 +13,7 @@ aliases: [Central de Documentação, Visão Geral PT-BR]
 [![Go](https://img.shields.io/badge/Go-1.22%2B-00ADD8?style=flat&logo=go)](https://go.dev/)
 [![Caddy](https://img.shields.io/badge/Caddy-2.8%2B-1F88C0?style=flat&logo=caddy&logoColor=white)](https://caddyserver.com/)
 [![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
-[![Licença](https://img.shields.io/badge/Licen%C3%A7a-Apache_2.0-blue?style=flat)](../../LICENSE)
+[![Licença: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](../../LICENSE)
 
 ---
 
@@ -61,5 +61,5 @@ O **NOXFORT EDGE GATEWAY** é o ponto de entrada central de rede de alta disponi
   <img src="../assets/noxfort-logo.png" alt="Logo Noxfort Systems" width="45" /><br/>
   <b>Noxfort Systems</b> — <i>A State Of Art Company</i><br/>
   <i>Controlled Artificial Road-traffic Intelligence Network Architecture • NOXFORT EDGE GATEWAY v1.0.0</i><br/>
-  <small>© 2026 Noxfort Systems. Licenciado sob Apache 2.0.</small>
+  <small>© 2026 Noxfort Systems. Licenciado sob Apache-2.0 (SPDX: Apache-2.0).</small>
 </div>

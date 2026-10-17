@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Noxfort Systems
+# SPDX-License-Identifier: Apache-2.0
+#
 # ==============================================================================
 # NOXFORT EDGE GATEWAY — MkDocs Configuration (Material for MkDocs)
 # Unified Multi-Tenant Edge Gateway & Reverse Proxy
@@ -7,7 +10,7 @@
 site_name: "NOXFORT EDGE GATEWAY — Technical Documentation"
 site_description: "Technical documentation for NOXFORT EDGE GATEWAY — High-availability edge reverse proxy, Caddy SNI routing and DuckDNS synchronization."
 site_author: "Gabriel Moraes — Noxfort Systems"
-copyright: "Copyright &copy; 2026 — Noxfort Systems"
+copyright: "Copyright &copy; 2026 — Noxfort Systems • SPDX-License-Identifier: Apache-2.0"
 
 # Exclude conflicting GitHub folder readme from MkDocs build
 exclude_docs: |

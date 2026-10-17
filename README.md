@@ -14,7 +14,7 @@ aliases: [NOXFORT Edge Gateway, Gateway Root, Master Ingress]
 [![Caddy](https://img.shields.io/badge/Caddy-2.8%2B-1F88C0?style=flat&logo=caddy&logoColor=white)](https://caddyserver.com/)
 [![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
 [![Architecture](https://img.shields.io/badge/Architecture-DDD%20%7C%20Clean-orange?style=flat)](#-arquitetura-e-destaques)
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue?style=flat)](LICENSE)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](LICENSE)
 
 ---
 
@@ -101,5 +101,5 @@ make stop
   <img src="docs/assets/noxfort-logo.png" alt="Noxfort Systems Logo" width="48" /><br/>
   <b>Noxfort Systems</b> — <i>A State Of Art Company</i><br/>
   <i>Unified Multi-Tenant Edge Gateway & Reverse Proxy • NOXFORT EDGE GATEWAY v1.0.0</i><br/>
-  <small>Licensed under the <a href="LICENSE">Apache License 2.0</a>. © 2026 Noxfort Systems.</small>
+  <small>Licensed under the <a href="LICENSE">Apache License 2.0</a> (SPDX: Apache-2.0). © 2026 Noxfort Systems.</small>
 </div>

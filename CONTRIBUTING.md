@@ -30,7 +30,7 @@ Thank you for contributing to **NOXFORT EDGE GATEWAY**! This project provides mi
    - **Application Layer (`internal/application`):** Use cases orchestrating domain entities via interfaces.
    - **Infrastructure Layer (`internal/infrastructure`):** Network drivers, HTTP clients, Caddy wrappers, DDNS synchronizers.
 2. **License Headers:**
-   Every new or modified source code file **MUST** include the standard **Apache 2.0 License Header** with proper author and date tags, as specified in `cabecalho.txt`.
+   Every new or modified source code file **MUST** include the standard **SPDX Apache 2.0 License Header** (`SPDX-FileCopyrightText: 2026 Noxfort Systems` and `SPDX-License-Identifier: Apache-2.0`) with proper author and date tags, as specified in `cabecalho.txt`.
 3. **No Port Conflicts:**
    Never bind arbitrary public host ports in production containers. Only ports **80** and **443** are exposed publicly.
 
@@ -54,7 +54,7 @@ See [docs/TESTING.md](docs/TESTING.md) for detailed guidelines.
 
 - [ ] Code follows DDD and SOLID guidelines outlined in `ARCHITECTURE.md`.
 - [ ] All unit tests pass with zero errors and race conditions.
-- [ ] Apache License 2.0 header is present in all newly created files.
+- [ ] SPDX Apache-2.0 license header (`SPDX-License-Identifier: Apache-2.0`) is present in all newly created files.
 - [ ] Relevant documentation in `docs/` is updated.
 - [ ] Commit messages follow the conventional commit format (`feat:`, `fix:`, `docs:`, `refactor:`).
 
@@ -63,5 +63,5 @@ See [docs/TESTING.md](docs/TESTING.md) for detailed guidelines.
 <div align="center">
   <img src="docs/assets/noxfort-logo.png" alt="Noxfort Systems Logo" width="40" /><br/>
   <b>Noxfort Systems</b> — <i>A State Of Art Company</i><br/>
-  <small>© 2026 Noxfort Systems. Licensed under the Apache License 2.0.</small>
+  <small>© 2026 Noxfort Systems. Licensed under Apache-2.0 (SPDX: Apache-2.0).</small>
 </div>

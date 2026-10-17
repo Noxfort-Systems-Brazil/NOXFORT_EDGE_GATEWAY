@@ -8,7 +8,7 @@
 [![Go](https://img.shields.io/badge/Go-1.22%2B-00ADD8?style=flat&logo=go)](https://go.dev/)
 [![Caddy](https://img.shields.io/badge/Caddy-2.8%2B-1F88C0?style=flat&logo=caddy&logoColor=white)](https://caddyserver.com/)
 [![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
-[![许可证](https://img.shields.io/badge/License-Apache_2.0-blue?style=flat)](../../LICENSE)
+[![许可证: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](../../LICENSE)
 
 ---
 
@@ -43,5 +43,5 @@
   <img src="../assets/noxfort-logo.png" alt="Noxfort Systems Logo" width="45" /><br/>
   <b>Noxfort Systems</b> — <i>A State Of Art Company</i><br/>
   <i>智能交通工程与移动性科技 • NOXFORT EDGE GATEWAY v1.0.0</i><br/>
-  <small>© 2026 Noxfort Systems. 遵循 Apache 2.0 许可证。</small>
+  <small>© 2026 Noxfort Systems. 遵循 Apache-2.0 许可证 (SPDX: Apache-2.0)。</small>
 </div>

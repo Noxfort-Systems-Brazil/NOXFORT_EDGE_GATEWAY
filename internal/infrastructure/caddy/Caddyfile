@@ -1,5 +1,6 @@
 # NOXFORT EDGE GATEWAY - Unified Multi-Tenant Edge Gateway & Reverse Proxy
-# Copyright (C) 2026 Noxfort Systems
+# SPDX-FileCopyrightText: 2026 Noxfort Systems
+# SPDX-License-Identifier: Apache-2.0
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.

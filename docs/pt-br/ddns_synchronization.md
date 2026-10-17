@@ -32,5 +32,5 @@ O **NOXFORT EDGE GATEWAY** garante acessibilidade contínua ao atualizar dinamic
 <div align="center">
   <img src="../assets/noxfort-logo.png" alt="Logo Noxfort Systems" width="40" /><br/>
   <b>Noxfort Systems</b> — <i>A State Of Art Company</i><br/>
-  <small>© 2026 Noxfort Systems. Licenciado sob Apache 2.0.</small>
+  <small>© 2026 Noxfort Systems. Licenciado sob Apache-2.0 (SPDX: Apache-2.0).</small>
 </div>

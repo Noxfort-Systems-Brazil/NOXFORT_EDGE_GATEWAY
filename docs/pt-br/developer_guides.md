@@ -35,14 +35,14 @@ make logs
 
 ---
 
-## 2. Padrões de Código e Cabeçalho de Licença
+## 2. Padrões de Código e Cabeçalho de Licença SPDX
 
-Todos os arquivos de código-fonte no repositório **devem** seguir o padrão de licença Apache 2.0 contido em `cabecalho.txt`. Ao criar novos arquivos Go, certifique-se de incluir os dados do arquivo, autor e data.
+Todos os arquivos de código-fonte no repositório **devem** seguir o padrão de licença SPDX Apache-2.0 contido em `cabecalho.txt` (`SPDX-FileCopyrightText: 2026 Noxfort Systems` e `SPDX-License-Identifier: Apache-2.0`). Ao criar novos arquivos Go, certifique-se de incluir as tags SPDX, metadados do arquivo, autor e data.
 
 ---
 
 <div align="center">
   <img src="../assets/noxfort-logo.png" alt="Logo Noxfort Systems" width="40" /><br/>
   <b>Noxfort Systems</b> — <i>A State Of Art Company</i><br/>
-  <small>© 2026 Noxfort Systems. Licenciado sob Apache 2.0.</small>
+  <small>© 2026 Noxfort Systems. Licenciado sob Apache-2.0 (SPDX: Apache-2.0).</small>
 </div>
